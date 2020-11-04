@@ -7,6 +7,7 @@
     background-image: url("../public/pizza-1-0.jpg");
     background-repeat: no-repeat;
     height: 800px;
+    width: auto;
 }
 
 .navigation {
@@ -48,31 +49,59 @@
     font-weight: 400;
     border-bottom: 3px solid yellow;
 }
+
 .convText {
     font-family: 'Mulish', sans-serif;
     font-size: 17px;
     font-weight: 400;
 }
 
-.menu {
+#menuImg_1 {
     background-image: url("../public/pizza-2-0.jpg");
     background-repeat: no-repeat;
-    width: 1903px;
-    height: 613px;
-    line-height: 96px;
+    width: auto;
     margin-top: 170px;
+    z-index: 1;
+}
+
+#menuImg_2 {
+    background-image: url("../public/pizza-5-00.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 613px;
+    margin-top: 170px;
+    z-index: 3;
 }
 
 .menuTitle {
     font-family: 'Mulish', sans-serif;
     font-size: 80px;
     font-weight: 700;
+    line-height: 96px;
+    color: white;
     padding-top: 150px;
+    margin-left: -350px;
 }
 
+.menuImg {
+    background-image: url("../public/pizza-5-00.jpg");
+    height: 613px;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.menuTable {
+    background-color: white;
+    border: 1px solid black;
+    height: 615px;
+    margin-top: -200px;
+}
+
+
+
 @media (max-width: 600px) {
-    .grid {
-        width: 100%;
-        flex-direction: column;
-    }
+    /*.grid {*/
+    /*    width: 100%;*/
+    /*    flex-direction: column;*/
+    /*}*/
 }

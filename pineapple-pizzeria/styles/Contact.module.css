@@ -1,0 +1,19 @@
+.header {
+    height: 42px;
+    background-color: black;
+}
+
+.mainSection {
+    background-image: url("../public/pizza-1-0.jpg");
+    background-repeat: no-repeat;
+    height: 800px;
+    width: auto;
+}
+
+.navigation {
+    text-decoration-color: white;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 27px;
+}
