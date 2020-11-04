@@ -1,13 +1,21 @@
 .header {
     height: 42px;
-    background-color: black;
+    width: 100%;
+    background-color: #1c1c1c;
 }
 
-.mainSection {
-    background-image: url("../public/pizza-1-0.jpg");
+
+#menuImg_1 {
+    background-image: url("../public/contact.jpg");
     background-repeat: no-repeat;
-    height: 800px;
-    width: auto;
+    height: 613px;
+    z-index: 3;
+}
+
+#menuImg_2 {
+    background-image: url("../public/coffee - kopie.jpg");
+    height: 613px;
+    z-index: 1;
 }
 
 .navigation {
@@ -16,4 +24,5 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 27px;
+    padding-top: 20px;
 }

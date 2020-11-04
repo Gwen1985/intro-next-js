@@ -2,6 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import styles from "../../styles/Contact.module.css";
 
+
 export default function contact() {
     return <div>
 
@@ -15,10 +16,11 @@ export default function contact() {
         <header className={styles.header}>
             <div className="row">
 
-                <div className="col-sm-8 col-md-7">
+                <div className="col-sm-7 col-md-7">
+
                 </div>
 
-                <div className="col-sm-4 col-md-5 mt-2 d-flex justify-content-center">
+                <div className="col-sm-5 col-md-5 mt-2 d-flex justify-content-center">
                     <a href="mailto:gwen.ellegeest@outlook.com" className="text-light">
                         <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"
                              xmlns="http://www.w3.org/2000/svg">
@@ -41,29 +43,28 @@ export default function contact() {
             </div>
         </header>
 
-        <main>
-            <section>
-                <div className={styles.mainSection}>
-                    <div className="row">
-                        <div className=" col-sm-8 col-md-7">
-                        </div>
+        <section>
+            <div className="row">
 
-                        <div className="col-sm-4 col-md-5 pt-3">
-                            <div className={styles.navigation}>
-                                <Link href="/"><a className="text-light"> Home </a></Link>
-                                <Link href="/navigation/about"><a className="ml-4 text-light">About </a></Link>
-                                <Link href="/navigation/menu"><a className="ml-4 text-light"> Menu </a></Link>
-                                <Link href="/navigation/contact"><a
-                                    className="ml-4 text-light"> Contact </a></Link>
-                            </div>
-                        </div>
+                <div className="col-md-9 d-flex justify-content-end" id={styles.menuImg_1}>
+                    <div className={styles.navigation}>
+                        <Link href="/"><a className="ml-4 text-light"> Home </a></Link>
+                        <Link href="/navigation/about"><a className="ml-4 text-light">About </a></Link>
+                        <Link href="/navigation/menu"><a className="ml-4 text-light"> Menu </a></Link>
+                        <Link href="/navigation/contact"><a className="ml-4 text-light"> Contact </a></Link>
                     </div>
                 </div>
-            </section>
-        </main>
+
+                <div className="col-md-3" id={styles.menuImg_2}>
+
+                </div>
+
+            </div>
+        </section>
 
 
-        <div className=" container-md d-flex justify-content-center">
+
+        <div className=" container-md-fluid d-flex justify-content-center">
 
             <form method="post">
                 <div className="pt-2">
@@ -109,10 +110,6 @@ export default function contact() {
                 </div>
             </form>
         </div>
-
-        <h4>Welcome to the Booking Page </h4>
-        <p> Here wil come a form for Booking a table</p>
-        <Link href="/"><a>Home</a></Link>
 
     </div>
 
