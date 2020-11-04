@@ -1,6 +1,6 @@
 # intro-next-js
 
-#### install Bootstrap
+### install Bootstrap
 
 -npm install bootstrap or yarn add bootstrap
 
