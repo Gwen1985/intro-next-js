@@ -4,18 +4,12 @@
     background-color: #1c1c1c;
 }
 
-
-#menuImg_1 {
-    background-image: url("../public/contact.jpg");
+.mainSection {
+    background-image: url("../public/menu-1.jpg");
     background-repeat: no-repeat;
-    height: 613px;
-    z-index: 3;
-}
-
-#menuImg_2 {
-    background-image: url("../public/coffee - kopie.jpg");
-    height: 613px;
-    z-index: 1;
+    opacity: 80%;
+    height: 460px;
+    width: auto;
 }
 
 .navigation {
@@ -25,6 +19,16 @@
     font-weight: 700;
     line-height: 27px;
     padding-top: 20px;
+}
+
+.menuTitle {
+    font-family: 'Mulish', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 27px;
+    padding-top: 30px;
+    text-align: center;
+    text-decoration: underline yellow;
 }
 
 @media (max-width: 600px) {
