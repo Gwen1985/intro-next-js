@@ -77,7 +77,7 @@ export default function Home() {
                             <div className="col-sm-12 col-md-12 pt-2 d-flex justify-content-center">
                                 <div className={styles.bookingBtn}>
                                     <Link href="/navigation/contact"><a className="btn btn-warning rounded-pill"
-                                                                           id={styles.bookingBtn}><p
+                                                                        id={styles.bookingBtn}><p
                                         className="pt-2">Book a
                                         table</p></a></Link>
                                 </div>
@@ -86,7 +86,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className={styles.main2}>
+                <section className={styles.main2} id="convenienceSection">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 pt-5 d-flex justify-content-center">
                             <p className={styles.conv}> Convenience </p>
@@ -140,7 +140,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section>
+                <section id="menuSection">
                     <div className="row">
 
                         <div className="col-md-9 d-flex justify-content-center" id={styles.menuImg_1}>
@@ -148,6 +148,64 @@ export default function Home() {
                         </div>
 
                         <div className="col-md-3" id={styles.menuImg_2}>
+                        </div>
+
+                    </div>
+
+                    <div className="row d-flex justify-content-center">
+                        <div className="col-sm-3 col-md-2">
+
+                        </div>
+
+                        <div className="col-sm-6 col-md-6 d-flex justify-content-center border border-light"
+                             id={styles.menuList}>
+                            <table>
+                                <tr>
+                                    <th className={styles.pizzaListTitle}>Pizza's</th>
+                                    <th className={styles.drinksListTitle}> Drinks</th>
+                                    <th className={styles.dessertsListTitle}> Desserts</th>
+                                </tr>
+
+                                <tr>
+                                    <td className={styles.pizzaList}>Margherita</td>
+                                    <td className={styles.drinksList}>Coffee</td>
+                                    <td className={styles.dessertsList}>Tiramisu</td>
+                                </tr>
+
+                                <tr>
+                                    <td className={styles.pizzaList}>Hawaii</td>
+                                    <td className={styles.drinksList}>Coca-Cola</td>
+                                    <td className={styles.dessertsList}>Ice cream</td>
+                                </tr>
+
+                                <tr>
+                                    <td className={styles.pizzaList}>Vegetarian</td>
+                                    <td className={styles.drinksList}>Fanta</td>
+                                    <td className={styles.dessertsList}>Panna Cotta</td>
+                                </tr>
+
+                                <tr>
+                                    <td className={styles.pizzaList}>Peperoni</td>
+                                    <td className={styles.drinksList}>Sprite</td>
+                                </tr>
+
+                                <tr>
+                                    <td className={styles.pizzaList}>Mexican</td>
+                                    <td className={styles.drinksList}>Beer</td>
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td className="pt-5">
+                                        <Link href="/navigation/contact"><a id={styles.seeMoreBtn}><p
+                                        className="pt-2">See More</p></a></Link>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div className="col-sm-3 col-md-4">
+
                         </div>
 
                     </div>

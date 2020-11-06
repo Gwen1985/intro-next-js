@@ -1,3 +1,4 @@
+
 .header {
     height: 42px;
     background-color: #1c1c1c;
@@ -61,16 +62,6 @@
     background-repeat: no-repeat;
     width: auto;
     margin-top: 170px;
-    z-index: 1;
-}
-
-#menuImg_2 {
-    background-image: url("../public/pizza-5-00.jpg");
-    background-repeat: no-repeat;
-    width: auto;
-    height: 613px;
-    margin-top: 170px;
-    z-index: 3;
 }
 
 .menuTitle {
@@ -83,6 +74,15 @@
     margin-left: -350px;
 }
 
+#menuImg_2 {
+    background-image: url("../public/pizza-5-00.jpg");
+    background-repeat: no-repeat;
+    width: auto;
+    height: 613px;
+    margin-top: 170px;
+}
+
+
 .menuImg {
     background-image: url("../public/pizza-5-00.jpg");
     height: 613px;
@@ -94,9 +94,81 @@
     background-color: white;
     border: 1px solid black;
     height: 615px;
-    margin-top: -200px;
+    margin-top: -175px;
+    z-index: 1;
 }
 
+#menuList {
+    margin-top: -200px;
+    padding-bottom: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pizzaListTitle {
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: underline yellow;
+    color: #333333;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+.drinksListTitle {
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: underline yellow;
+    color: #333333;
+    padding-top: 200px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+}
+
+.dessertsListTitle {
+    font-family: 'Mulish', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: underline yellow;
+    color: #333333;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+}
+
+.pizzaList {
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333333;
+}
+
+.drinksList {
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333333;
+    padding-left: 150px;
+}
+
+.dessertsList {
+    font-family: 'Mulish', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #333333;
+    padding-left: 150px;
+}
+
+#seeMoreBtn {
+padding-top: 110px;
+}
 
 
 @media (max-width: 600px) {
