@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import '@fortawesome/fontawesome-free/js/all.js';
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
                 <link rel="icon" href="/pinClipart.png"/>
                 <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Mulish&display=swap"
                       rel="stylesheet"/>
+                <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css"/>
             </Head>
 
             <header className={styles.header}>
@@ -19,23 +21,14 @@ export default function Home() {
                     </div>
 
                     <div className="col-sm-4 col-md-5 mt-2 d-flex justify-content-center">
-                        <a href="mailto:gwen.ellegeest@outlook.com" className="text-light">
-                            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
-                            </svg>
+                        <a href="mailto:gwen.ellegeest@outlook.com" className="">
+                            <i className="far fa-envelope"/>
                         </a>
 
-                        <a href="https://www.facebook.com/gwen.makaveli/" className="text-light ml-2">
-                            <svg width="18" height="18" viewBox="0 0 16 16"
-                                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
-                                <path
-                                    d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                            </svg>
+                        <a href="https://www.facebook.com/gwen.makaveli/" className=" ml-4">
+                            <i className="fab fa-facebook-f"/>
                         </a>
+
                     </div>
 
                 </div>
@@ -151,14 +144,12 @@ export default function Home() {
                         </div>
 
                     </div>
+                </section>
 
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-sm-3 col-md-2">
+                <section className="container" id={styles.menuContainer}>
+                    <div className="row">
 
-                        </div>
-
-                        <div className="col-sm-6 col-md-6 d-flex justify-content-center border border-light"
-                             id={styles.menuList}>
+                        <div className="col-md-7" id={styles.table}>
                             <table>
                                 <tr>
                                     <th className={styles.pizzaListTitle}>Pizza's</th>
@@ -196,28 +187,141 @@ export default function Home() {
 
                                 <tr>
                                     <td></td>
-                                    <td className="pt-5">
-                                        <Link href="/navigation/contact"><a id={styles.seeMoreBtn}><p
-                                        className="pt-2">See More</p></a></Link>
-                                    </td>
+                                    <td className="pt-5 d-flex justify-content-center"></td>
                                 </tr>
                             </table>
+
+                            <Link href="/navigation/contact"><a
+                                className="btn btn-warning d-flex justify-content-center" id={styles.seeMore}
+                                role="button"> See More </a></Link>
                         </div>
 
-                        <div className="col-sm-3 col-md-4">
-
+                        <div className="col-md-5 pl-5" id={styles.image_3}>
                         </div>
 
                     </div>
                 </section>
 
+                <section className="container" id={styles.aboutContainer}>
 
+                    <div className="row">
+
+                        <div className="col-md-6" id={styles.image_4}>
+                        </div>
+
+                        <div className="col-md-6 pl-3">
+                            <p className={styles.aboutListTitle}>About us</p>
+
+                            <p className={styles.aboutList}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Aliquam sit amet laoreet ligula.
+                                Nullam laoreet urna et malesuada sagittis. Suspendisse rutrum dolor sit amet lorem
+                                finibus, a mattis nibh sodales. Curabitur egestas ut ex sit amet rutrum. Duis lectus
+                                eros, gravida et rutrum vitae, fermentum et libero. Mauris fringilla orci ac mi tempus
+                                accumsan. Vivamus eleifend magna eu leo fermentum facilisis. Nullam tellus ipsum,
+                                scelerisque ut vestibulum vitae, iaculis id neque. </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section>
+                    <div className="row">
+
+                        <div className="col d-flex justify-content-center">
+                            <p className={styles.contactUs}> Contact us</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section className="container" id={styles.contactContainer}>
+
+                    <div className="row">
+
+                        <div className="col-md-7 pt-5 d-flex justify-content-center">
+                            <form method="post" className={styles.contactForm}>
+
+                                <div className="pt-4">
+                                    {/*E-MAIL*/}
+                                    <label htmlFor="email" className="">Your e-mail: </label><br/>
+                                    <input required type="email" id="email" name="email" className={styles.inputFields}
+                                           placeholder="Your@email.com"/>
+                                </div>
+
+                                <div className="pt-4">
+                                    {/*FIRST NAME + LAST NAME*/}
+                                    <label htmlFor="name" className="">First name & Last name: </label><br/>
+                                    <input required type="text" id="name" name="name" className={styles.inputFields}
+                                           placeholder="First & Last name:"/>
+                                </div>
+
+                                <div className="pt-4">
+                                    {/*MOBILE NR*/}
+                                    <label htmlFor="mobile-nr" className="">GSM: </label><br/>
+                                    <input required type="text" id="mobile-nr" name="mobile-nr" className={styles.inputFields}
+                                           placeholder="+32 470 / 12 34 56"/>
+                                </div>
+
+                                <div className="pt-4">
+                                    {/*BOOKING MESSAGE */}
+                                    <label htmlFor="booking-msg" className="">Message: </label><br/>
+                                    <input required type="text" id="booking-msg" name="booking-msg" className={styles.inputFields}
+                                           placeholder="Message:"/>
+                                </div>
+
+                                <div className="container-md d-flex justify-content-center">
+                                    <div className=" pt-5">
+                                        <button type="submit" id="submit" name="submit"
+                                                className={styles.sendBtn} >
+                                            SEND
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div className="col-md-5" id={styles.image_5}>
+                        </div>
+
+                    </div>
+                </section>
             </main>
 
-            {/*<footer className={styles.footer}>*/
-            }
-            {/*</footer>*/
-            }
+            <footer className={styles.footer}>
+                <div className="row jumbotron">
+
+                    <div className="col-md-3 pl-5 ml-5">
+                        <p className={styles.footerTitle}>Contact</p>
+
+                        <a href="tel:123 12 12">+32 (09) 123 12 12</a>
+                        <p className={styles.footertext}>email@contact.com</p>
+
+                        <a href="https://www.facebook.com/gwen.makaveli/" className="">
+                            <i className="fab fa-facebook-f"/>
+                        </a>
+
+                        <a href="https://www.facebook.com/gwen.makaveli/" className=" ml-4">
+                            <i className="fab fa-instagram"/>
+                        </a>
+
+                        <a href="https://www.facebook.com/gwen.makaveli/" className=" ml-4">
+                            <i className="fab fa-twitter"/>
+                        </a>
+                    </div>
+
+                    <div className="col-md-3 pl-5">
+                        <p className={styles.footerTitle}>Opening Hours</p>
+                        <p className={styles.footertext}>Monday-Friday 08:00 - 20:00m</p>
+                        <p className={styles.footertext}>Saturday  09:00 - 21:00</p>
+                    </div>
+
+                    <div className="col-md-6">
+
+                    </div>
+
+                </div>
+
+            </footer>
         </div>
     )
 }
