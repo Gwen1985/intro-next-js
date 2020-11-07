@@ -46,7 +46,7 @@ export default function about() {
                         <div className="col-sm-4 col-md-5 pt-3">
                             <div className={styles.navigation}>
                                 <Link href="/"><a className="ml-4 text-light"> Home </a></Link>
-                                <Link href="/navigation/about"><a className="ml-4 text-light">About </a></Link>
+                                {/*<Link href="/navigation/about"><a className="ml-4 text-light">About </a></Link>*/}
                                 <Link href="/navigation/menu"><a className="ml-4 text-light"> Menu </a></Link>
                                 <Link href="/navigation/contact"><a
                                     className="ml-4 text-light"> Contact </a></Link>

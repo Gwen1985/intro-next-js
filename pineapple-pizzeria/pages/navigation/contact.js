@@ -43,7 +43,7 @@ export default function contact() {
                         <Link href="/"><a className="ml-4 text-light"> Home </a></Link>
                         <Link href="/navigation/about"><a className="ml-4 text-light">About </a></Link>
                         <Link href="/navigation/menu"><a className="ml-4 text-light"> Menu </a></Link>
-                        <Link href="/navigation/contact"><a className="ml-4 text-light"> Contact </a></Link>
+                        {/*<Link href="/navigation/contact"><a className="ml-4 text-light"> Contact </a></Link>*/}
                     </div>
                 </div>
 
